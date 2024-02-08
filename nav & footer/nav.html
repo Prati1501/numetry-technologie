@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li {
+            float: left;
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        ul.topnav li a.active {
+            background-color: #2268d0;
+        }
+
+        ul.topnav li.right {
+            float: right;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: relative;
+
+        }
+
+        .left1 {
+            height: 100%;
+            width: 55%;
+            padding: 5vw 4vw;
+
+        }
+
+        .left1 h1 {
+            font-size: 4.2vw;
+            line-height: 4.4vw;
+        }
+
+        .left1 h1 span {
+            color: lightgreen;
+        }
+
+        .left1 p {
+            font-size: 1.2vw;
+            font-weight: 600;
+            color: #666;
+            margin-top: 3vw;
+            margin-bottom: 4vw;
+        }
+
+        button {
+            font-size: 1.5vw;
+            padding: 1.1vw 2.1vw;
+            background-color: rgb(11, 148, 123);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .right1 {
+            height: 100%;
+            width: 45%;
+
+        }
+
+        .right1 img {
+            height: 80%;
+            width: 80%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            margin-top: 15px;
+        }
+
+        .footpanel1 {
+            background-color: #37475a;
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+
+        }
+
+        .footpanel2 {
+            background-color: #222f3d;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: rgba(200, 185, 185, 0.793);
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+
+
+        }
+
+        .footer h4 {
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: oblique;
+            text-align: center;
+            border-bottom: 2px solid black;
+        }
+
+        .footpanel3 {
+            background-color: #222f3d;
+            color: white;
+            border-top: 0.5px solid white;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            background-image: url("aa.png");
+            background-size: cover;
+            height: 50px;
+            width: 100px;
+
+        }
+
+        .footpanel4 {
+            background-color: #0f1111;
+            color: white;
+            height: 80px;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+
+        .footpanel4 a {
+            color: white;
+        }
+
+        .page1 {
+            padding-top: 25px;
+
+        }
+
+        .copyright {
+            padding-top: 5px;
+
+        }
+
+        @media screen and (max-width: 700px) {
+
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+
+            .content {
+                height: 40%;
+                flex-direction: column;
+            }
+
+            .left1 {
+                width: 100%;
+                height: 100%;
+            }
+
+            .right1 {
+                width: 80%;
+                height: 80%;
+            }
+
+            .left1 h1 {
+                font-size: 10vw;
+                line-height: 11vw;
+
+            }
+
+            .left1 p {
+                font-size: 2.5vw;
+            }
+            .right1 img{
+                  display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Search</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Library</a></li>
+        <li><a href="">Help</a></li>
+        <li class="right"><a href="#login.html">Log in</a></li>
+        <li class="right"><a href="#login.html">Contact</a></li>
+    </ul>
+
+    <div class="content">
+        <div class="left1">
+            <h1>Learn from the <span>Coolest </span> platform by pratiksha</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officiis, inventore explicabo cum
+                praesentium natus. Ad molestias accusamus incidunt suscipit, repellat
+                dolorum saepe non repellendus nemo harum dicta. Magnam, quae.</p>
+            <button>Explore Now</button>
+        </div>
+        <div class="right1">
+            <img src="code1.jpg" alt="">
+        </div>
+    </div>
+    <section class="footer">
+        
+        <div class="footpanel1">
+            Back to top
+        </div>
+        <div class="footpanel2">
+            <ul>
+                <p>Contact</p>
+                <a href="">university</a>
+                <a href="">Blog</a>
+                <a href="">about college</a>
+                <a href="">planning</a>
+                <a href="">science</a>
+            </ul>
+            <ul>
+                <p>Important Links</p>
+                <a href="">spoken</a>
+                <a href="">codsoft</a>
+                <a href="">campus</a>
+                <a href="">Investors relatins</a>
+                <a href="">results</a>
+            </ul>
+            <ul>
+                <p>Useful Links</p>
+                <a href="">test</a>
+                <a href="">university</a>
+                <a href="">syllabi </a>
+                <a href="">login</a>
+                <a href="">home</a>
+            </ul>
+            <ul>
+                <p>Student Corner</p>
+                <a href="">English</a>
+                <a href="">science</a>
+                <a href="">math</a>
+                <a href="">environment</a>
+                <a href="">science</a>
+            </ul>
+        </div>
+        <div class="footpanel3">
+            <div class="logo">
+
+            </div>
+        </div>
+        <div class="footpanel4">
+            <div class="page1">
+                <a href="">Conditions of use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">your ads privacy choices</a>
+            </div>
+            <div class="copyright">
+                <p>1996-2023,tour.com,Inc.or its affilates</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
