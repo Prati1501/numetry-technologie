@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="lib/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: block;
+        }
+
+        body {
+            font-family: 'Philosopher-Regular';
+            font-size: 16px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: white;
+        }
+
+        .container {
+            position: relative;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .navbar.navbar-default {
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.7);
+            padding-left: 0px;
+            padding-right: 0px;
+            top:0;
+        }
+
+        .main-slider {
+            overflow: hidden;
+        }
+
+        .logo {
+            height: 70px;
+            padding: 5px;
+            float: left;
+        }
+
+        .icon-bar {
+            background: rgb(155, 70, 70);
+        }
+
+        li a {
+            color: rgb(3, 3, 3);
+            font-weight: 10px;
+            font-size: 15px;
+
+        }
+
+        .mySlides {
+            display: block;
+        }
+
+        .content {
+
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .left {
+            height: 100%;
+            width: 50%;
+            position: relative;
+
+        }
+
+        .left img {
+
+            height: 50%;
+            width: 60%;
+            border-radius: 20px;
+            margin-left: 150px;
+
+        }
+
+        .right h2 {
+            text-align: left;
+            color: #242424;
+            margin-bottom: 2px;
+            font-family: dayana Italic;
+            font-size: 30px;
+        }
+
+
+        .btn-warning {
+            color: #fff;
+            background-color: #6e5e31;
+
+            padding: 10px;
+            border-color: white;
+        }
+
+        .right button:hover {
+            background-color: orange;
+            cursor: pointer;
+
+        }
+
+        .location {
+            text-align: center;
+        }
+
+        .location img {
+            height: 30%;
+            width: 30%;
+        }
+
+        .location h2 {
+            font-size: 4.2vw;
+            font-family: 800;
+        }
+
+
+
+
+        .navbar1 {
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 2px black;
+            border-top: 2px solid black;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .navbar1 a {
+            float: left;
+            display: block;
+            color: #0a0a0a;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar1 h4{
+            margin-right: 40px;
+            font-weight: 600;
+        }
+
+        .loc {
+            display: flex;
+            align-items: flex-start;
+            padding-top: 12px;
+        }
+
+        .navbar1 a:hover {
+            background: #f1f1f1;
+            color: black;
+        }
+
+        .loc-text {
+            font-weight: 600;
+            font-size: 21px;
+        }
+
+        .loc-para {
+            font-weight: 600;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href=""><img class="logo" src="logo.jpg"></a>
+
+                </div>
+                <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Academics</a></li>
+                        <li><a href="">Programmes</a></li>
+                        <li><a href="">Student corner</a></li>
+                        <li><a href="">Syllabi</a></li>
+                        <li><a href="">Student corner</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                        </li>
+                </div>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="main-slider" class="mySlides">
+        <div class="right">
+            <img src="Screenshot (99).png" alt="" class="img-responsive">
+        </div>
+    </section>
+
+
+
+
+    <section class="" id="sec-overview" style="padding:40px 0 40px 0;margin:0;">
+        <div class="container">
+            <div class="row" style="">
+                <div class="col-md-5">
+                    <div class="">
+                        <img src="about1.jpg" width="100%" style="border-radius: 17px;">
+                    </div>
+                </div>
+                <div class="col-md-7" style="margin-top:0px">
+                    <h4>Introducing<br>
+                        2 & 3 BHK</h4>
+                    <h2 class=""
+                        style="text-align: left;color: #242424; margin-bottom: 0px;font-family: dayana Italic;font-size: 50px;">
+                        Ultra Luxury Lifespaces</h2>
+                    <h4 style="margin-bottom:30px;">
+                        IN WALNUT & OAK @ WOODS PLATINA
+                    </h4>
+                    <p style="color:#000">After the grand success of Maple & Ebony Towers, SMGK Group has to offer
+                        you Ultra Luxury lifespaces in Walnut & Oak Towers @ Woods Platina
+                        <br><br>
+                        Curated with smart technology features and modern amenities, these
+                        thoughtfully designed residences make your life Simpler, Smarter and Efficient
+                        <br><br>
+                        In a congested city like Mumbai only a privileged few get the opportunity to
+                        enjoy Nature and Luxury in one place
+                        <br><br>
+                        So make the most out of it and get best of both the worlds only at - Woods
+                        Platina
+                    </p>
+                    <br> <a href="javascript:void(0)" data-toggle="modal" data-target="#enquiryModal1"
+                        class="btn1 btn-warning" target="_blank" style="padding: 10px;">Know More</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="" id="sec-overview" style="padding:40px 0 40px 0;margin:0;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-7" style="margin-top:0px">
+                    <h4>Luxury<br>
+                        A KING SIZE LIFE OF</h4>
+                    <h2 class=""
+                        style="text-align: left;color: #242424; margin-bottom: 0px;font-family: dayana Italic;font-size: 50px;">
+                        Urban Indulgences</h2>
+                    <p style="color:#000; text-transform:uppercase">
+
+                        At Woods Platina, You have an exclusive rooftop garden with a host of amenities for you to
+                        savour the high life
+                    </p>
+                    <div class="">
+                        <div class="col-md-6 col-xs-6 col-sm-6" style="padding:0px;">
+                            <div class="ame">
+                                <img src="i1.jpg">
+                                <span>Exquisite Sky Garden</span>
+                            </div><br>
+                            <div class="ame">
+                                <img src="i2.jpg">
+                                <span>Children's Play Area</span>
+                            </div><br>
+                            <div class="ame">
+                                <img src="i3.jpg">
+                                <span>Sit-Out Areas</span>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6" style="padding: 0px;">
+                            <div class="ame">
+                                <img src="i4.jpg">
+                                <span>Jogging Track</span>
+                            </div><br>
+                            <div class="ame">
+                                <img src="i5.jpg">
+                                <span>Infinity Edge Pool</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <br>
+
+
+                </div>
+                <div class="col-md-5" style="margin-top:30px;">
+                    <picture class="artimptag">
+                        <img src="ame.jpg" width="100%" style="border-radius: 17px;">
+                    </picture>
+                    <div class="top-left hidden-xs hidden-sm">Rooftop Amenities</div>
+                    <div class="top-left1 hidden-md hidden-lg">Rooftop Amenities</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="hidden-lg hidden-md">
+
+    <section class="" id="sec-overview" style="padding:40px 0 40px 0;margin:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5" style="">
+                    <picture class="artimptag">
+                        <img src="capsule-lift.jpg" width="100%" style="border-radius: 17px;">
+                    </picture>
+                    <div class="top-left">Capsule Lift @ Walnut Tower</div>
+
+                </div>
+                <div class="col-md-7" style="margin-top:0px">
+
+                    <h2 class=""
+                        style="text-align: left;color: #242424; margin-bottom: 0px;font-family: dayana Italic;font-size: 50px;">
+                        High Living</h2>
+                    <h4> <b>A PREVIEW OF YOUR LIFESTYLE</b></h4>
+                    <h5><b>FEATURES</b></h5>
+                    <ul>
+                        <li>Two Fully Automatic High Speed Lifts</li>
+                        <li>Boom Barrier Systems at Entry / Exit Points</li>
+                        <li>An Integrated Fire Fighting System</li>
+                        <li>Vertical Garbage Shafts</li>
+                        <li>Sewerage Treatment Plant</li>
+                        <li>Generator Backup for Essential Services</li>
+                        <li>Automated Parking Tower</li>
+                    </ul>
+
+                    <br>
+                    <p>
+                        Enhancing the breath-taking architectural aesthetics of Woods Platina is a Capsule Lift
+                        in Walnut Tower with striking interiors and large glass viewing panels overlooking
+                        the beautiful recreational spaces bound by the scenic skyline
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="location-map" style="padding:40px 0 0px 0;">
+        <div class="container">
+
+            <h2 class=" wow slideInDown headertext">LOCATION</h2>
+            <p style="text-align:center;    margin-bottom: 16px;">
+
+                The strategic location of Woods
+                Platina is one of the main reasons why
+                the project has immense scope for
+                Value appreciation over time<br>
+                Considering the fact that your home
+                will be worth substantially more a few
+                years down the line, investing in
+                Woods Platina is a great Idea ...
+            </p>
+            <div class="row">
+
+
+                <div class="col-md-6" style="    margin-bottom: 15px;">
+
+
+                    <img src="map.jpg" width="100%" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow cursor mapImg wd map-style">
+
+
+
+
+
+                </div>
+
+                <div class="col-md-6 ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.2659714366177!2d72.83795841490213!3d19.139831487051264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6300f4933dd%3A0x79a101ce99400e3c!2sSMGK%20Associate%20Woods%20Platina!5e0!3m2!1sen!2sin!4v1685012879100!5m2!1sen!2sin"
+                        width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row" style="background: #e7e8ea;margin-top: 27px;">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="loc">
+                        <img src="l1.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">2 MINUTE</span>
+                            <p class="loc-para">Walk From The Nearest Metro Station</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="loc"><img src="l2.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">8 MINUTES</span>
+                            <p class="loc-para">Away From Lokhandwala Complex</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="loc"><img src="l3.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">10 MINUTES</span>
+                            <p class="loc-para">Walk From The Nearest Railway Station</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="loc"><img src="l4.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">4 MINUTES</span>
+                            <p class="loc-para">Drive To Link Road</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="background: #e7e8ea;padding-bottom:40px;">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="loc"><img src="l5.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">5 MINUTES</span>
+                            <p class="loc-para">Drive To Western Express Highway</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="loc"><img src="l6.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">2 MINUTES</span>
+                            <p class="loc-para">Walk from 12.5 Acres Veera Desai Sports Complex</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="loc"><img src="l7.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">20 MINUTES</span>
+                            <p class="loc-para">Drive To Domestic And International Airports</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="loc"><img src="l8.jpg" class="loc-img">
+                        <div class="loc-sub-sec">
+                            <span class="loc-text">15 MINUTES</span>
+                            <p class="loc-para">Drive to Kokila Ben Dhirubhai Ambani Hospital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background: #e7e8ea;padding-bottom:40px;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div style="text-align: center;font-weight: 600;">
+                    Site Address : <br>Sales Experience Centre - Woods Platina, New JVLR Extension Road, Near Evershine
+                    Embassy, Oshivara, Mmumbai - 400 102
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="navbar1">
+        <h4>Enquire Now</h4>
+        <a href="#home" class="active"><input type="text" placeholder="Name"></a>
+        <a href="#news"><input type="email" placeholder="email"></a>
+        <a href="#contact"><input type="number" placeholder="Number"></a>
+        <button type="submit" class="btn btn-default">SUBMIT</button>
+    </div>
+
+</body>
+
+</html>
